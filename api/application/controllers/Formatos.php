@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Terceros extends CI_Controller {
+class Formatos extends CI_Controller {
 
-	public function Terceros()
+	public function Formatos()
 	{
 		$accion = $this->uri->segment(3,'0');
 		switch ($accion) {
@@ -11,7 +11,7 @@ class Terceros extends CI_Controller {
 			case 'gestionar':
 				if ($this->uri->segment(4) == "guardar") {
 
-				$query = $this->Registro->RegistrarTercero();
+				$query = $this->Registro->RegistrarFormato();
 				json_encode($query);
 				}
 				break;
@@ -24,5 +24,5 @@ class Terceros extends CI_Controller {
 
 }
 
-/* End of file Terceros.php */
-/* Location: ./application/controllers/Terceros.php */
+/* End of file Formatos.php */
+/* Location: ./application/controllers/Formatos.php */
