@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Formatos extends CI_Controller {
 
-	public function Formatos()
+	public function Formato()
 	{
 		$accion = $this->uri->segment(3,'0');
 		switch ($accion) {

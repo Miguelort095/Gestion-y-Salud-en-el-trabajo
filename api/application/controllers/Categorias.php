@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Categorias extends CI_Controller {
 
-	public function Categorias()
+	public function Categoria()
 	{
 		$accion = $this->uri->segment(3,'0');
 		switch ($accion) {

@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Itens extends CI_Controller {
 
-	public function Itens()
+	public function Iten()
 	{
 		$accion = $this->uri->segment(3,'0');
 		switch ($accion) {

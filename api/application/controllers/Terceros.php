@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Terceros extends CI_Controller {
 
-	public function Terceros()
+	public function Tercero()
 	{
 		$accion = $this->uri->segment(3,'0');
 		switch ($accion) {
